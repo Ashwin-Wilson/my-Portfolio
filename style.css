@@ -1,0 +1,242 @@
+:root {
+    --bg-clr: #010e21;
+    --clr: #fff;
+    --bg-mid: #052c659d;
+    --bg-light: #0b47a0ea;
+    --bg-dark: #000b18;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--bg-clr);
+    color: var(--clr);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.navbar {
+    background-color: var(--bg-clr);
+    color: var(--clr);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.offcanvas-NavBg {
+    background-color: var(--bg-clr);
+    color: var(--clr);
+}
+
+#home {
+    background-image: url('assets/bgBanner.png');
+    background-position: center;
+    background-size: cover;
+    height: 100vb;
+    font-weight: 300;
+    padding-top: 12rem;
+
+
+}
+
+.about-box {
+    background-image: url('assets/doodleBanner2\(a\).png');
+    background-position: center;
+    background-size: cover;
+    padding: 1rem;
+}
+
+.fancyTitle {
+    font-family: "Rubik Iso", system-ui;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.container {
+    height: 100%;
+    /* padding-top: 12rem; */
+}
+
+.pages {
+    width: 100%;
+}
+
+.porfilePic {
+    width: 20rem;
+    border-radius: 10px;
+}
+
+.titleName {
+    font-size: 3rem;
+    /* font-family: "Bebas Neue", sans-serif; */
+    font-family: "Poppins", sans-serif;
+
+    font-weight: 500;
+    font-style: normal;
+}
+
+#about img {
+    width: 100%;
+    /* height: 3rem; */
+}
+
+@media screen and (max-width: 600px) {
+    .porfilePic {
+        width: 13rem;
+        /* border-radius: 10px; */
+    }
+
+    #home {
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+    #home h3 {
+        font-size: 1rem;
+    }
+
+    #home .titleName {
+        font-size: 1.5rem;
+        font-weight: bolder;
+    }
+}
+
+.bg-box {
+    background-color: var(--bg-mid);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+
+.skillBadge {
+    background-color: var(--bg-clr);
+    width: 12rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 20px;
+    transition: all 1s ease;
+
+}
+
+.skillBadge img {
+    width: 1rem;
+}
+
+.skillBadge:hover {
+    background-color: var(--bg-light);
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 600px) {
+    .skillBadge {
+        background-color: var(--bg-clr);
+        width: 20rem;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        border-radius: 20px;
+        transition: all 1s ease;
+
+    }
+}
+
+.section-title {
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    color: var(--bg-light);
+    position: relative;
+    z-index: 2;
+}
+
+.section-title span {
+    position: absolute;
+    top: 30px;
+    color: var(--bg-mid);
+    left: 0;
+    right: 0;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 52px;
+    text-transform: uppercase;
+    line-height: 0;
+}
+
+.section-title p {
+    margin-bottom: 0;
+    position: relative;
+    z-index: 2;
+}
+
+#resume {
+    background-color: var(--bg-dark);
+}
+
+.achievements {
+    background-image: url(assets/doodleBanner.png);
+    background-position: center;
+    background-size: cover;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+
+}
+
+.section-title h1 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+#about img {
+    margin-top: 2rem;
+    width: 20rem;
+    /* transform: translateX(0%); */
+}
+
+#projects {
+    background-image: url(assets/doodleBanner3.png);
+    background-position: center;
+    background-size: cover;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+.frame {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 1rem;
+    background-color: #149dddbb;
+}
+
+.sub-title {
+    color: #111;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: var(--bg-clr);
+    font-size: 2rem;
+    font-family: Kanit, sans-serif
+}
+
+footer {
+    height: fit-content;
+    background-color: var(--bg-dark);
+    /* padding: 1rem; */
+
+}
+
+footer img {
+    width: 2rem;
+}

@@ -1,0 +1,73 @@
+@keyframes blink {
+
+    0%,
+    15%,
+    50% {
+        opacity: 0
+    }
+
+    25%,
+    5% {
+        opacity: .5
+    }
+
+    10%,
+    100%,
+    75% {
+        opacity: 1
+    }
+
+    20% {
+        opacity: .1
+    }
+}
+
+.blink {
+    animation: 2s infinite blink;
+}
+
+@keyframes slideUp {
+
+    0%,
+    100% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(-5px)
+    }
+}
+
+.slideUp {
+    animation: 2s infinite slideUp
+}
+
+@keyframes slideRight {
+
+    0% {
+        transform: translateX(-100%)
+    }
+
+    100% {
+        transform: translateX(0)
+    }
+}
+
+.animateRight {
+    animation: 2s 1 slideRight
+}
+
+@keyframes slideLeft {
+
+    0% {
+        transform: translateX(100%)
+    }
+
+    100% {
+        transform: translateX(0)
+    }
+}
+
+.animateLeft {
+    animation: 2s 1 slideLeft
+}
