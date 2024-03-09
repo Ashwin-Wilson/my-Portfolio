@@ -8,8 +8,8 @@
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
@@ -20,6 +20,70 @@ body {
     font-weight: 300;
     font-style: normal;
 }
+
+.front-slide{
+    width: 100%;
+    height: 100%;
+    background-color: #0c0c0c;
+    position: absolute;
+
+}
+.samp{
+    width: 100%;
+    height: 30%;
+}
+.welcome{
+    color: #32CD32;
+    position: relative;
+}
+
+/* Welcome animation */
+
+#spin {
+    color:#4232cd;
+  }
+  #spin:after {
+    content:"";
+    animation: spin 2s linear infinite;
+  }
+  @keyframes spin {
+    0% { content:"You’re welcome."}
+    10% { content:"You’re welcome."}
+    20% { content:"Je vous en prie."}
+    30% { content:"Gern geschehen."}
+    40% { content:"आपका स्वागत है।"}
+    50% { content: "どういたしまして"}
+    60% { content: "பரவாயில்லை."; }
+    70% { content: "Пожалуйста."; }
+    80% { content: "천만에요"; }
+    90% { content: "பரவாயில்லை."; }
+  } 
+
+  .linear-wipe {
+    background: linear-gradient(
+      to right,
+      #7953cd 20%,
+      #00affa 30%,
+      #0190cd 70%,
+      #764ada 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 5s ease-in-out infinite alternate;
+  }
+
+  @keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+  /* animation end */
 
 .navbar {
     background-color: var(--bg-clr);
@@ -35,7 +99,7 @@ body {
 }
 
 #home {
-    background-image: url('assets/bgBanner.png');
+    background-image: url('assets/bgBanner-min.png');
     background-position: center;
     background-size: cover;
     height: 100vb;
@@ -46,7 +110,7 @@ body {
 }
 
 .about-box {
-    background-image: url('assets/doodleBanner2\(a\).png');
+    background-image: url('assets/doodleBanner2\(a\)-min.png');
     background-position: center;
     background-size: cover;
     padding: 1rem;
@@ -71,7 +135,9 @@ body {
     width: 20rem;
     border-radius: 10px;
 }
-
+.porfilePic :hover {
+    transform: scale(1.5);
+}
 .titleName {
     font-size: 3rem;
     /* font-family: "Bebas Neue", sans-serif; */
@@ -136,13 +202,17 @@ body {
 @media screen and (max-width: 600px) {
     .skillBadge {
         background-color: var(--bg-clr);
-        width: 20rem;
-        padding: 0.5rem;
-        margin: 0.5rem;
+        width: 100%;
+        /* padding: 0.5rem; */
+        /* margin: 0.5rem; */
         border-radius: 20px;
         transition: all 1s ease;
 
     }
+}
+
+.skillContainer {
+    padding-left: 0px;
 }
 
 .section-title {
@@ -186,7 +256,7 @@ body {
 }
 
 .achievements {
-    background-image: url(assets/doodleBanner.png);
+    background-image: url(assets/doodleBanner-min.png);
     background-position: center;
     background-size: cover;
     padding-top: 1rem;
@@ -200,6 +270,8 @@ body {
     color: #fff;
 }
 
+
+
 #about img {
     margin-top: 2rem;
     width: 20rem;
@@ -207,7 +279,7 @@ body {
 }
 
 #projects {
-    background-image: url(assets/doodleBanner3.png);
+    background-image: url(assets/doodleBanner3-min.png);
     background-position: center;
     background-size: cover;
     padding-top: 1rem;
@@ -239,4 +311,10 @@ footer {
 
 footer img {
     width: 2rem;
+}
+
+footer .logo {
+    background-color: #fff;
+    border-radius: 10px;
+
 }
