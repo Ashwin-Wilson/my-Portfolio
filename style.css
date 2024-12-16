@@ -1,61 +1,13 @@
-#home,
-body {
-    font-weight: 300
-}
-
-#home,
-.about-box {
-    background-position: center;
-    background-size: cover
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.navbar,
-.pages,
-.samp {
-    width: 100%
-}
-
-.fancyTitle,
-.titleName {
-    font-weight: 500;
-    font-style: normal
-}
-
-.fancyTitle,
-.titleName,
-body {
-    font-style: normal
-}
-
-.section-title h2,
-.section-title span {
-    font-weight: 700;
-    text-transform: uppercase
-}
-
-#resume,
-footer {
-    background-color: var(--bg-dark)
-}
-
-.bg-box,
-.porfilePic,
-footer .logo {
-    border-radius: 10px
-}
-
+/* General colours */
 :root {
     --bg-clr: #010e21;
-    --clr: #fff;
+    --white-clr: #ffff;
     --bg-mid: #052c659d;
-    --bg-light: #0b47a0ea;
+    --bg-light: #095ddc;
     --bg-dark: #000b18;
 }
 
+/* general styling */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -65,19 +17,96 @@ footer .logo {
 body {
     overflow-x: hidden;
     background-color: var(--bg-clr);
-    color: var(--clr);
-    font-family: Poppins, sans-serif
+    color: var(--white-clr);
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #010e21c3;
+    color: var(--white-clr);
+    position: fixed;
+    z-index: 2;
+}
+
+.offcanvas-NavBg {
+    background-color: #010e21c3;
+    color: var(--white-clr)
+}
+
+/* utility classes */
+
+.pages {
+    padding: 3rem;
+}
+
+.fancyTitle {
+    font-weight: 500;
+    font-style: normal;
+    font-family: "Rubik Iso", system-ui;
+}
+
+.bg-box {
+    border-radius: 10px;
+    background-color: var(--bg-mid);
+    padding: 1rem
+}
+
+.section-title {
+    text-align: center;
+    padding: 30px 0;
+    position: relative
+}
+
+.section-title h1 {
+    font-size: 3rem;
+    color: #fff
+}
+
+.section-title h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    color: var(--bg-light);
+    position: relative;
+    z-index: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.section-title span {
+    position: absolute;
+    top: 30px;
+    color: var(--bg-mid);
+    left: 0;
+    right: 0;
+    z-index: 0;
+    font-size: 52px;
+    line-height: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.section-title p {
+    margin-bottom: 0;
+    position: relative;
+    z-index: 2;
+}
+
+/* for sliding div */
+.samp {
+    width: 100%;
+    height: 30%
 }
 
 .front-slide {
     width: 100%;
     height: 100%;
     background-color: #0c0c0c;
-    position: absolute
-}
-
-.samp {
-    height: 30%
+    position: absolute;
+    z-index: 3;
 }
 
 .welcome {
@@ -85,37 +114,33 @@ body {
     position: relative
 }
 
-.navbar,
-.offcanvas-NavBg {
-    background-color: #010e21c3;
-    color: var(--clr)
-}
 
-.navbar {
-    position: fixed;
-    z-index: 1
-}
-
+/* For home page */
 #home {
     background-image: url('assets/bgBanner-min.png');
-    height: 100vb;
-    padding-top: 12rem
+    background-position: center;
+    background-size: cover;
+    height: fit-content;
+    padding-top: 13rem;
+    padding-bottom: 13rem;
 }
 
-.about-box {
-    background-image: url('assets/doodleBanner2\(a\)-min.png');
-    padding: 1rem
+.titleName {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 3rem;
+    font-family: Poppins, sans-serif;
 }
 
-#about-img {
-    width: 29rem;
-    height: 29rem;
+.porfilePic {
+    width: 20rem;
+    border-radius: 10px
 }
 
+/* For about page */
 #about-img img {
     width: 100%;
 }
-
 
 .terminal-view {
     border: solid;
@@ -123,6 +148,24 @@ body {
     border-color: rgb(27, 27, 27);
     border-radius: 5px;
     background-color: rgb(36, 35, 35);
+    height: fit-content;
+}
+
+.terminal-view h3 {
+    color: #32cd32;
+}
+
+.terminal-view button {
+    float: right;
+    background-color: #32cd32;
+    border-style: groove;
+    border-width: 3px;
+    border-color: gray;
+}
+
+.terminal-view img {
+    width: 1rem;
+    margin-right: 5px;
 }
 
 .terminal-control-area {
@@ -131,32 +174,13 @@ body {
     padding: 0.5rem;
 }
 
-.fancyTitle {
-    font-family: "Rubik Iso", system-ui
+
+/* For resume page */
+#resume {
+    background-color: var(--bg-dark);
 }
 
-.container {
-    height: 100%
-}
-
-.porfilePic {
-    width: 20rem
-}
-
-.porfilePic :hover {
-    transform: scale(1.5)
-}
-
-.titleName {
-    font-size: 3rem;
-    font-family: Poppins, sans-serif
-}
-
-.bg-box {
-    background-color: var(--bg-mid);
-    padding: 1rem
-}
-
+/* For Skill page */
 .skillBadge {
     background-color: var(--bg-clr);
     width: 12rem;
@@ -172,93 +196,29 @@ body {
 
 .skillBadge:hover {
     background-color: var(--bg-light);
-    transform: scale(1.2)
-}
-
-@media screen and (max-width:600px) {
-
-    #home,
-    #home h3 {
-        font-size: 1rem
-    }
-
-    .porfilePic {
-        width: 13rem
-    }
-
-    #home {
-        font-weight: 200
-    }
-
-    #home .titleName {
-        font-size: 1.5rem;
-        font-weight: bolder
-    }
-
-    .skillBadge {
-        background-color: var(--bg-clr);
-        width: 100%;
-        border-radius: 20px;
-        transition: 1s
-    }
 }
 
 .skillContainer {
-    padding-left: 0
+    padding-left: 0;
 }
 
-.section-title {
-    text-align: center;
-    padding: 30px 0;
-    position: relative
-}
 
-#projects,
+/* For achievements page */
 .achievements {
     background-position: center;
     background-size: cover;
     padding-top: 1rem;
-    padding-bottom: 1rem
+    padding-bottom: 1rem;
+    background-image: url(assets/doodleBanner-min.png);
 }
 
-.section-title h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    padding-bottom: 0;
-    color: var(--bg-light);
-    position: relative;
-    z-index: 2
-}
-
-.section-title span {
-    position: absolute;
-    top: 30px;
-    color: var(--bg-mid);
-    left: 0;
-    right: 0;
-    z-index: 1;
-    font-size: 52px;
-    line-height: 0
-}
-
-.section-title p {
-    margin-bottom: 0;
-    position: relative;
-    z-index: 2
-}
-
-.achievements {
-    background-image: url(assets/doodleBanner-min.png)
-}
-
-.section-title h1 {
-    font-size: 3rem;
-    color: #fff
-}
-
-
+/* For projects page */
 #projects {
-    background-image: url(assets/doodleBanner3-min.png)
+    background-image: url(assets/doodleBanner3-min.png);
+    background-position: center;
+    background-size: cover;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .frame {
@@ -276,14 +236,17 @@ body {
     font-family: Kanit, sans-serif
 }
 
+/* For footer */
 footer {
-    height: fit-content
+    background-color: var(--bg-dark);
+    height: fit-content;
 }
 
 footer img {
-    width: 2rem
+    width: 2rem;
 }
 
 footer .logo {
-    background-color: #fff
+    background-color: #fff;
+    border-radius: 10px;
 }
