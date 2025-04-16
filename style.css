@@ -1,252 +1,341 @@
 /* General colours */
 :root {
-    --bg-clr: #010e21;
-    --white-clr: #ffff;
-    --bg-mid: #052c659d;
-    --bg-light: #095ddc;
-    --bg-dark: #000b18;
+  --bg-clr: #010e21;
+  --white-clr: #ffff;
+  --bg-mid: #043681;
+  --bg-light: #095ddc;
+  --bg-dark: #000b18;
 }
 
 /* general styling */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    overflow-x: hidden;
-    background-color: var(--bg-clr);
-    color: var(--white-clr);
-    font-family: Poppins, sans-serif;
-    font-weight: 300;
-    font-style: normal;
+  overflow-x: hidden;
+  background-color: var(--bg-clr);
+  color: var(--white-clr);
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .navbar {
-    width: 100%;
-    background-color: #010e21c3;
-    color: var(--white-clr);
-    position: fixed;
-    z-index: 2;
+  width: 100%;
+  background-color: #010e21c3;
+  color: var(--white-clr);
+  position: fixed;
+  z-index: 5;
 }
 
 .offcanvas-NavBg {
-    background-color: #010e21c3;
-    color: var(--white-clr)
+  background-color: #010e21c3;
+  color: var(--white-clr);
 }
 
 /* utility classes */
 
 .pages {
-    padding: 3rem;
+  padding: 2rem;
 }
 
 .fancyTitle {
-    font-weight: 500;
-    font-style: normal;
-    font-family: "Rubik Iso", system-ui;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Rubik Iso", system-ui;
 }
 
 .bg-box {
-    border-radius: 10px;
-    background-color: var(--bg-mid);
-    padding: 1rem
+  border-radius: 10px;
+  background-color: var(--bg-mid);
+  padding: 1rem;
+}
+
+.bg-border {
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: var(--bg-mid);
+  padding: 1rem;
 }
 
 .section-title {
-    text-align: center;
-    padding: 30px 0;
-    position: relative
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
 }
 
 .section-title h1 {
-    font-size: 3rem;
-    color: #fff
+  font-size: 3rem;
+  color: #fff;
 }
 
 .section-title h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    padding-bottom: 0;
-    color: var(--bg-light);
-    position: relative;
-    z-index: 1;
-    font-weight: 700;
-    text-transform: uppercase;
+  font-size: 32px;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: var(--bg-light);
+  position: relative;
+  z-index: 1;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .section-title span {
-    position: absolute;
-    top: 30px;
-    color: var(--bg-mid);
-    left: 0;
-    right: 0;
-    z-index: 0;
-    font-size: 52px;
-    line-height: 0;
-    font-weight: 700;
-    text-transform: uppercase;
+  position: absolute;
+  top: 30px;
+  color: var(--bg-mid);
+  left: 0;
+  right: 0;
+  z-index: 0;
+  font-size: 52px;
+  line-height: 0;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .section-title p {
-    margin-bottom: 0;
-    position: relative;
-    z-index: 2;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 2;
 }
 
 /* for sliding div */
 .samp {
-    width: 100%;
-    height: 30%
+  width: 100%;
+  height: 30%;
 }
 
 .front-slide {
-    width: 100%;
-    height: 100%;
-    background-color: #0c0c0c;
-    position: absolute;
-    z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: #0c0c0c;
+  position: absolute;
+  z-index: 3;
 }
 
 .welcome {
-    color: #32cd32;
-    position: relative
+  color: #32cd32;
+  position: relative;
 }
-
 
 /* For home page */
 #home {
-    background-image: url('assets/bgBanner-min.png');
-    background-position: center;
-    background-size: cover;
-    height: fit-content;
-    padding-top: 13rem;
-    padding-bottom: 13rem;
+  background-image: url("assets/homeBanner.webp");
+  background-position: center;
+  background-size: cover;
+  height: fit-content;
+  padding-top: 13rem;
+  padding-bottom: 13rem;
 }
 
 .titleName {
-    font-weight: 500;
-    font-style: normal;
-    font-size: 3rem;
-    font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 3rem;
+  font-family: Poppins, sans-serif;
 }
 
 .porfilePic {
-    width: 20rem;
-    border-radius: 10px
+  width: 20rem;
+  border-radius: 10px;
 }
 
 /* For about page */
 #about-img img {
-    width: 100%;
+  width: 100%;
 }
 
 .terminal-view {
-    border: solid;
-    border-width: 4px;
-    border-color: rgb(27, 27, 27);
-    border-radius: 5px;
-    background-color: rgb(36, 35, 35);
-    height: fit-content;
+  border: solid;
+  border-width: 4px;
+  border-color: rgb(27, 27, 27);
+  border-radius: 5px;
+  background-color: rgb(36, 35, 35);
+  height: fit-content;
 }
 
 .terminal-view h3 {
-    color: #32cd32;
+  color: #32cd32;
 }
 
 .terminal-view button {
-    float: right;
-    background-color: #32cd32;
-    border-style: groove;
-    border-width: 3px;
-    border-color: gray;
+  float: right;
+  background-color: #32cd32;
+  border-style: groove;
+  border-width: 3px;
+  border-color: gray;
 }
 
 .terminal-view img {
-    width: 1rem;
-    margin-right: 5px;
+  width: 1rem;
+  margin-right: 5px;
 }
 
 .terminal-control-area {
-    width: 100%;
-    background-color: rgb(27, 27, 27);
-    padding: 0.5rem;
+  width: 100%;
+  background-color: rgb(27, 27, 27);
+  padding: 0.5rem;
 }
 
-
-/* For resume page */
-#resume {
-    background-color: var(--bg-dark);
+.text {
+  width: 100%;
+  position: relative;
+  transform: skewY(360deg) translateY(-50%);
+  animation: animateColor 5s linear infinite;
 }
 
-/* For Skill page */
+@keyframes animateColor {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.text h2 {
+  position: relative;
+  width: 100%;
+  font-size: 8em;
+  color: #fff;
+  pointer-events: none;
+  line-height: 1em;
+  white-space: nowrap;
+  text-shadow: calc(var(--x)) 100px 0 rgba(255, 255, 255, 0.1);
+  transform: translateX(calc(0% - var(--x) * var(--i)));
+}
+
+.text h2 span {
+  color: #00aaff;
+  margin: 0 10px;
+  background: transparent;
+}
+
+.text h2 span:nth-child(even) {
+  color: transparent;
+  -webkit-text-stroke: 2px #fff;
+}
+
+/* Skill section */
+.panel {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.skill-bg {
+  background-image: url("assets/Doodle.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat-x;
+}
+
+.skills-section {
+  background-color: rgba(34, 34, 95, 0.351);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(16.5px);
+  -webkit-backdrop-filter: blur(16.5px);
+  width: fit-content;
+  border-radius: 1rem;
+  border-style: solid;
+  border-color: var(--bg-light);
+  border-width: 2px;
+}
+
 .skillBadge {
-    background-color: var(--bg-clr);
-    width: 12rem;
-    padding: 1rem;
-    margin: .5rem;
-    border-radius: 20px;
-    transition: 1s
+  background-color: var(--bg-clr);
+  width: 12rem;
+  padding: 1rem;
+  margin: 0.2rem;
+  border-radius: 20px;
+  transition: 1s;
 }
 
 .skillBadge img {
-    width: 1rem
+  width: 1rem;
 }
 
 .skillBadge:hover {
-    background-color: var(--bg-light);
+  background-color: var(--bg-light);
 }
 
 .skillContainer {
-    padding-left: 0;
+  /* padding-left: 0; */
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
+.skillContainer h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  /* background-color: var(--bg-light); */
+  width: 12rem;
+  min-width: fit-content;
+  padding: 0.5rem;
+  padding-inline: 1rem;
+  border-radius: 5px;
+}
+
+/* For resume page */
+#resume {
+  background-color: var(--bg-dark);
+}
+
+#education-list span {
+  float: right;
+}
 
 /* For achievements page */
 .achievements {
-    background-position: center;
-    background-size: cover;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background-image: url(assets/doodleBanner-min.png);
+  background-position: center;
+  background-size: cover;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-image: url(assets/doodleBanner-min.png);
 }
 
 /* For projects page */
 #projects {
-    background-image: url(assets/doodleBanner3-min.png);
-    background-position: center;
-    background-size: cover;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+  background-image: url(assets/doodleBanner3-min.png);
+  background-position: center;
+  background-size: cover;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .frame {
-    margin-top: 1rem;
-    width: 100%;
-    padding: 1rem;
-    background-color: #149dddbb
+  margin-top: 1rem;
+  width: 100%;
+  padding: 1rem;
+  background-color: #149dddbb;
 }
 
 .sub-title {
-    color: #111;
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: var(--bg-clr);
-    font-size: 2rem;
-    font-family: Kanit, sans-serif
+  color: #111;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: var(--bg-clr);
+  font-size: 2rem;
+  font-family: Kanit, sans-serif;
 }
 
 /* For footer */
 footer {
-    background-color: var(--bg-dark);
-    height: fit-content;
+  background-color: var(--bg-dark);
+  height: fit-content;
 }
 
 footer img {
-    width: 2rem;
+  width: 2rem;
 }
 
 footer .logo {
-    background-color: #fff;
-    border-radius: 10px;
+  /* background-color: #fff; */
+  border-radius: 10px;
 }

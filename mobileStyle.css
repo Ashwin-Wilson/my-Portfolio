@@ -1,32 +1,44 @@
+/* General colours */
+:root {
+  --bg-clr: #010e21;
+  --white-clr: #ffff;
+  --bg-mid: #052c659d;
+  --bg-light: #095ddc;
+  --bg-dark: #000b18;
+}
 
-@media screen and (max-width:600px) {
-    #home {
-        height: 100vb;
-        font-weight: 200;
+@media screen and (max-width: 600px) {
+  #home {
+    height: 100vb;
+    font-weight: 200;
+  }
 
-    }
+  #home h3 {
+    font-size: 1rem;
+  }
 
-    #home h3 {
-        font-size: 1rem
-    }
+  .porfilePic {
+    width: 13rem;
+  }
 
-    .porfilePic {
-        width: 13rem
-    }
+  #home .titleName {
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
 
-    #home .titleName {
-        font-size: 1.5rem;
-        font-weight: bolder
-    }
+  .skillBadge {
+    background-color: var(--bg-clr);
+    width: 100%;
+    border-radius: 20px;
+    transition: 1s;
+  }
 
-    .skillBadge {
-        background-color: var(--bg-clr);
-        width: 100%;
-        border-radius: 20px;
-        transition: 1s
-    }
+  .skillContainer h3 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
 
-    #about {
-        padding: 1rem;
-    }
+  .panel {
+    visibility: hidden;
+  }
 }
