@@ -9,21 +9,30 @@
 
 @media screen and (max-width: 600px) {
   #home {
-    height: 100vb;
+    height: 100vh;
     font-weight: 200;
+    text-align: center;
   }
-
-  #home h3 {
-    font-size: 1rem;
-  }
-
   .porfilePic {
+    margin-top: 5rem;
     width: 13rem;
   }
 
+  #home h3 {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    margin-bottom: 0rem;
+  }
+
   #home .titleName {
-    font-size: 1.5rem;
-    font-weight: bolder;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2rem;
+  }
+
+  #home p {
+    margin-top: 1rem;
+    font-size: 0.9rem;
   }
 
   .skillBadge {

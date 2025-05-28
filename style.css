@@ -43,6 +43,8 @@ body {
 }
 
 .fancyTitle {
+  color: var(--white-clr);
+  font-size: xx-large;
   font-weight: 500;
   font-style: normal;
   font-family: "Rubik Iso", system-ui;
@@ -132,11 +134,20 @@ body {
   padding-bottom: 13rem;
 }
 
+#home h3 {
+  margin-bottom: -0.5rem;
+}
 .titleName {
   font-weight: 500;
   font-style: normal;
-  font-size: 3rem;
+  font-size: 5rem;
   font-family: Poppins, sans-serif;
+  line-height: 5rem;
+  /* margin-bottom: -0.1rem; */
+}
+
+#home p {
+  font-size: 1.2rem;
 }
 
 .porfilePic {
