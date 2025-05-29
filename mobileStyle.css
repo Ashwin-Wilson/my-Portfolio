@@ -43,11 +43,28 @@
   }
 
   .skillContainer h3 {
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 400;
   }
 
   .panel {
     visibility: hidden;
+  }
+  #resume {
+    background-position-x: 70%;
+  }
+  .disclosure {
+    border-color: var(--bg-light);
+    background-color: rgba(34, 34, 95, 0.175);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(16.5px);
+  }
+  .disclosure-trigger {
+    flex-direction: column;
+  }
+  .disclosure-trigger-sub-section {
+    justify-content: space-between;
+    text-align: left;
   }
 }

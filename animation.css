@@ -109,7 +109,7 @@
   }
 }
 
-.linear-wipe {
+.linear-wipe:hover {
   background: linear-gradient(
     to right,
     #7953cd 20%,

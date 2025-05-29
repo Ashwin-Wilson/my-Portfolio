@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta content="width=device-width,initial-scale=1" name="viewport" />
     <title>Ashwin Wilson</title>
-    <link rel="icon" href="assets/profilePic-min.jpg" />
+    <link rel="icon" href="assets/profilePic.webp" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
     <link
@@ -57,7 +57,7 @@
       class="navbar navbar-dark navbar-expand-lg"
     >
       <div class="container-fluid">
-        <a href="#" class="navbar-brand mx-2">Ashwin Wilson</a
+        <a href="#" class="navbar-brand mx-2 linear-wipe">Ashwin Wilson</a
         ><button
           aria-label="Toggle navigation"
           class="navbar-toggler"
@@ -116,7 +116,7 @@
             <img
               src="assets/profilePic.webp"
               alt=""
-              class="porfilePic fade-in-fast"
+              class="porfilePic fade-in-fast glow"
             />
           </div>
           <div
@@ -146,7 +146,7 @@
         <div class="col-md-5 col-12 text-center" id="about-img">
           <img src="assets/about-banner.webp" />
         </div>
-        <div class="col-md-6 col-12 terminal-view p-0">
+        <div class="col-md-6 col-12 terminal-view p-0 glow">
           <div class="terminal-control-area d-flex">
             <div
               style="
@@ -212,7 +212,7 @@
     <section class="pages" id="skills">
       <div class="skill-bg row d-flex justify-content-center">
         <div
-          class="skills-section d-flex flex-column align-items-center p-3 col-md-8"
+          class="skills-section d-flex flex-column align-items-center p-3 col-md-8 glow"
         >
           <h1 class="fancyTitle text-center">Skills</h1>
           <p class="text-center">
@@ -318,53 +318,259 @@
           <h2>My Resume</h2>
         </div>
         <div class="row d-flex justify-content-center">
-          <div class="col-12 mt-5 col-md-12" id="education-list">
+          <div class="col-12 mt-5 col-md-12" id="">
             <h3>Education</h3>
             <hr />
-            <div class="mt-4">
-              <h6>
-                Btech Computer Science and Engineering
-                <span>2022 - present</span>
-              </h6>
-              <p>
-                <i
-                  >College of Engineering, Adoor, Kerala
-                  <span><b>CGPA : 9.24</b></span>
-                </i>
-                <br />
+            <details class="disclosure">
+              <summary class="disclosure-trigger">
+                <div class="col-md-6 col-12">
+                  <h6>Btech Computer Science and Engineering</h6>
+                  <span>
+                    <i>College of Engineering, Adoor, Kerala </i>
+                  </span>
+                </div>
+                <div class="col-md-6 col-12 disclosure-trigger-sub-section">
+                  <div class="d-flex flex-column">
+                    <span>2022 - present</span>
+                    <span><b>CGPA : 9.24</b></span>
+                  </div>
+                  <span class="mx-3 disclosure-icon">▼</span>
+                </div>
+              </summary>
+              <div class="disclosure-content">
                 "I am currently pursuing my final year in Bachelor of Technology
                 in Computer Science and Engineering at College of Engineering
                 Adoor"
-              </p>
-            </div>
+              </div>
+            </details>
+
             <hr />
-            <div class="mt-4">
-              <h6>Higher Secondary Education<span>2020 - 2022</span></h6>
-              <p>
-                <i
-                  >Catholicate HSS, Pathanamthitta, Kerala
-                  <span><b>96.5%</b></span> </i
-                ><br />
+            <details class="disclosure">
+              <summary class="disclosure-trigger">
+                <div class="col-md-6 col-12">
+                  <h6>Higher Secondary Education</h6>
+                  <span>
+                    <i>Catholicate HSS, Pathanamthitta, Kerala</i>
+                  </span>
+                </div>
+                <div class="col-md-6 col-12 disclosure-trigger-sub-section">
+                  <div class="d-flex flex-column">
+                    <span>2020 - 2022</span>
+                    <span><b>Score : 96.5%</b></span>
+                  </div>
+                  <span class="mx-3 disclosure-icon">▼</span>
+                </div>
+              </summary>
+              <div class="disclosure-content">
                 "I have successfully completed my Higher Secondary education
                 from Catholicate HSS, Pathanamthitta, Kerala"
-              </p>
-            </div>
+              </div>
+            </details>
+
             <hr />
-            <div class="mt-4">
-              <h6>High School Education <span>2019 - 2020</span></h6>
-              <p>
-                <i
-                  >ABHS, Omalloor, Kerala <span><b>98%</b></span></i
-                >
-                <br />
+            <details class="disclosure">
+              <summary class="disclosure-trigger">
+                <div class="col-md-6 col-12">
+                  <h6>High School Education</h6>
+                  <span>
+                    <i>ABHS, Omalloor, Kerala </i>
+                  </span>
+                </div>
+                <div class="col-md-6 col-12 disclosure-trigger-sub-section">
+                  <div class="d-flex flex-column">
+                    <span>2019 - 2020</span>
+                    <span><b>Score : 98%</b></span>
+                  </div>
+                  <span class="mx-3 disclosure-icon">▼</span>
+                </div>
+              </summary>
+              <div class="disclosure-content">
                 "I have successfully completed my 10th-grade education from Arya
                 bharathi HS, Omalloor, Kerala."
-              </p>
-            </div>
+              </div>
+            </details>
+
+            <hr />
+          </div>
+          <div class="col-12 mt-5 col-md-12" id="">
+            <h3>Experience</h3>
+            <hr />
+            <details class="disclosure">
+              <summary class="disclosure-trigger">
+                <div class="col-md-6 col-12">
+                  <h6>Software Engineer - Freelancing</h6>
+                  <span>
+                    <i>Webie </i>
+                  </span>
+                </div>
+                <div class="col-md-6 col-12 disclosure-trigger-sub-section">
+                  <div class="d-flex flex-column">
+                    <span>2024 - Present</span>
+                    <span
+                      ><b><a href="webie.tech">webie.tech</a></b></span
+                    >
+                  </div>
+                  <span class="mx-3 disclosure-icon">▼</span>
+                </div>
+              </summary>
+              <div class="disclosure-content">
+                Collaborated with clients to define requirements and delivered
+                responsive, full-stack web applications
+              </div>
+            </details>
+
+            <hr />
+            <details class="disclosure">
+              <summary class="disclosure-trigger">
+                <div class="col-md-6 col-12">
+                  <h6>Webmaster</h6>
+                  <span>
+                    <i>IEEE Education Society Kerala Chapter</i>
+                  </span>
+                </div>
+                <div class="col-md-6 col-12 disclosure-trigger-sub-section">
+                  <div class="d-flex flex-column">
+                    <span>2024 - 2025</span>
+                    <span
+                      ><b
+                        ><a href="https://r10.ieee.org/kerala-es/"
+                          >website</a
+                        ></b
+                      ></span
+                    >
+                  </div>
+                  <span class="mx-3 disclosure-icon">▼</span>
+                </div>
+              </summary>
+              <div class="disclosure-content">
+                <ul>
+                  <li>
+                    Designed and maintained the IEEE EdSoc KC website,
+                    publishing real-time updates for events such as
+                    <a href="https://r10.ieee.org/kerala-es/e-kites/"
+                      >e-kites</a
+                    >
+                  </li>
+                  <li>
+                    Led and organized multiple technical activities under IEEE
+                    EdSoc KC.
+                  </li>
+                </ul>
+              </div>
+            </details>
+
+            <hr />
+
+            <details class="disclosure">
+              <summary class="disclosure-trigger">
+                <div class="col-md-6 col-12">
+                  <h6>Creative and Innovation Lead</h6>
+                  <span>
+                    <i>IEDC TBI College of Engineering Adoor</i>
+                  </span>
+                </div>
+                <div class="col-md-6 col-12 disclosure-trigger-sub-section">
+                  <div class="d-flex flex-column">
+                    <span>2024 - 2025</span>
+                    <span
+                      ><b
+                        ><a
+                          href="https://drive.google.com/file/d/1ojjy3AW62XV4dB4zlamTMIHhPf3G7Hfc/view"
+                          >certificate</a
+                        ></b
+                      ></span
+                    >
+                  </div>
+                  <span class="mx-3 disclosure-icon">▼</span>
+                </div>
+              </summary>
+              <div class="disclosure-content">
+                <ul>
+                  <li>
+                    Leading the Creative and Innovation committee of IEDC TBI at
+                    College of Engineering Adoor.
+                  </li>
+                  <li>
+                    Develop strategies to attract new members and expand the
+                    community base.
+                  </li>
+                  <li>
+                    Implementing creative ideas and coordinating the activities
+                    hosted by IEDC TBI CEA.
+                  </li>
+                </ul>
+              </div>
+            </details>
+
+            <hr />
+            <details class="disclosure">
+              <summary class="disclosure-trigger">
+                <div class="col-md-6 col-12">
+                  <h6>Web Team Member</h6>
+                  <span>
+                    <i>IEEE Student Branch College of Engineering Adoor</i>
+                  </span>
+                </div>
+                <div class="col-md-6 col-12 disclosure-trigger-sub-section">
+                  <div class="d-flex flex-column">
+                    <span>2024 - 2025</span>
+                    <!-- <span
+                      ><b
+                        ><a
+                          href="https://drive.google.com/file/d/1ojjy3AW62XV4dB4zlamTMIHhPf3G7Hfc/view"
+                          >certificate</a
+                        ></b
+                      ></span
+                    > -->
+                  </div>
+                  <span class="mx-3 disclosure-icon">▼</span>
+                </div>
+              </summary>
+              <div class="disclosure-content">
+                <ul>
+                  <li>Maintaining the website of IEEE SB CEA.</li>
+                  <li>
+                    Actively coordinating the activities hosted by IEEE SB CEA.
+                  </li>
+                </ul>
+              </div>
+            </details>
+
+            <hr />
+            <details class="disclosure">
+              <summary class="disclosure-trigger">
+                <div class="col-md-6 col-12">
+                  <h6>IEEEXtreme 18.0 Student Ambassador</h6>
+                  <span>
+                    <i>IEEE</i>
+                  </span>
+                </div>
+                <div class="col-md-6 col-12 disclosure-trigger-sub-section">
+                  <div class="d-flex flex-column">
+                    <span>2024</span>
+                    <span
+                      ><b
+                        ><a
+                          href="https://drive.google.com/file/d/1ojjy3AW62XV4dB4zlamTMIHhPf3G7Hfc/view"
+                          >certificate</a
+                        ></b
+                      ></span
+                    >
+                  </div>
+                  <span class="mx-3 disclosure-icon">▼</span>
+                </div>
+              </summary>
+              <div class="disclosure-content">
+                Promoted IEEEXtreme 18.0 through coding workshops and mentorship
+                sessions, increasing participation from the campus community.
+              </div>
+            </details>
+
             <hr />
           </div>
           <div class="mt-5 achievements d-flex justify-content-between row">
             <h3>Achievements</h3>
+            <hr />
             <div class="col-12 bg-box col-md-5 mt-3">
               <h6>Completed Voice of Stakeholder Training</h6>
               <div class="btn btn-dark">2024</div>
@@ -379,7 +585,7 @@
                 >know more...</a
               >
             </div>
-            <div class="col-12 bg-box col-md-5 mt-5">
+            <div class="col-12 bg-box col-md-5 mt-5 mt-md-3">
               <h6>Participated in IEEEXtreme 17.0</h6>
               <div class="btn btn-dark">2023</div>
               <p>
@@ -457,7 +663,7 @@
         </div>
         <div class="row">
           <div class="col-12 col-md-4">
-            <div class="text-center frame">
+            <div class="text-center project-card">
               <h6 class="my-3 sub-title">Project - 1</h6>
               <div>
                 <img
@@ -475,7 +681,7 @@
             </div>
           </div>
           <div class="col-12 col-md-4">
-            <div class="text-center frame">
+            <div class="text-center project-card">
               <h6 class="my-3 sub-title">Project - 2</h6>
               <div>
                 <img
@@ -493,7 +699,7 @@
             </div>
           </div>
           <div class="col-12 col-md-4">
-            <div class="text-center frame">
+            <div class="text-center project-card">
               <h6 class="my-3 sub-title">Project - 3</h6>
               <div>
                 <video
@@ -516,7 +722,7 @@
         </div>
         <div class="row">
           <div class="col-12 col-md-4">
-            <div class="text-center frame">
+            <div class="text-center project-card">
               <h6 class="my-3 sub-title">Project - 4</h6>
               <div>
                 <video
@@ -537,7 +743,7 @@
             </div>
           </div>
           <div class="col-12 col-md-4">
-            <div class="text-center frame">
+            <div class="text-center project-card">
               <h6 class="my-3 sub-title">Project - 5</h6>
               <div>
                 <video
@@ -558,7 +764,7 @@
             </div>
           </div>
           <div class="col-12 col-md-4">
-            <div class="text-center frame">
+            <div class="text-center project-card">
               <h6 class="my-3 sub-title">Project - 6</h6>
               <div>
                 <video

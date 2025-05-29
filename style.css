@@ -51,8 +51,18 @@ body {
 }
 
 .bg-box {
-  border-radius: 10px;
+  /* border-radius: 10px;
   background-color: var(--bg-mid);
+  padding: 1rem; */
+  border-width: 2px;
+  border-radius: 10px;
+  border-color: #00aaff00;
+  border-style: solid;
+  border-color: var(--bg-mid);
+  background-color: rgba(34, 34, 95, 0.175);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(16.5px);
   padding: 1rem;
 }
 
@@ -62,6 +72,19 @@ body {
   border-radius: 10px;
   border-color: var(--bg-mid);
   padding: 1rem;
+}
+.glow {
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
+.glow:hover {
+  box-shadow: -6px 0px 40px 0px rgb(0 123 255 / 71%),
+    6px 0 40px 5px rgba(255, 20, 145, 0.804), 0 4px 15px rgba(0, 0, 0, 0.504);
+
+  transform: translateY(-2px);
 }
 
 .section-title {
@@ -233,6 +256,7 @@ body {
 }
 
 /* Skill section */
+
 .panel {
   position: absolute;
   overflow: hidden;
@@ -277,7 +301,6 @@ body {
 }
 
 .skillContainer {
-  /* padding-left: 0; */
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -286,7 +309,6 @@ body {
 .skillContainer h3 {
   font-size: 1.3rem;
   font-weight: 400;
-  /* background-color: var(--bg-light); */
   width: 12rem;
   min-width: fit-content;
   padding: 0.5rem;
@@ -296,32 +318,91 @@ body {
 
 /* For resume page */
 #resume {
-  background-color: var(--bg-dark);
+  background-image: url("assets/resume-bg.webp");
+  background-attachment: fixed;
+  background-position: center;
+  background-clip: initial;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-#education-list span {
-  float: right;
+.disclosure {
+  border-width: 1px;
+  border-radius: 10px;
+  border-color: #00aaff00;
+  border-style: solid;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  padding: 1rem;
+}
+.disclosure:hover {
+  border-color: var(--bg-light);
+  background-color: rgba(34, 34, 95, 0.175);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(16.5px);
+}
+
+.disclosure-trigger {
+  width: 100%;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  transition: all 0.2s ease;
+}
+
+.disclosure-trigger-sub-section {
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  text-align: right;
+}
+
+.disclosure-icon {
+  transition: transform 0.3s ease;
+  font-size: 1.5rem;
+  color: var(--white-clr);
+}
+
+.disclosure[open] .disclosure-icon {
+  transform: rotate(180deg);
+}
+
+.disclosure-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease, padding 0.5s ease;
+}
+
+.disclosure[open] .disclosure-content {
+  max-height: 500px;
 }
 
 /* For achievements page */
 .achievements {
-  background-position: center;
-  background-size: cover;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-image: url(assets/doodleBanner-min.png);
+  border-width: 2px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: var(--bg-mid);
+  background-color: rgba(34, 34, 95, 0.175);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(16.5px);
+  padding: 1rem;
 }
 
 /* For projects page */
 #projects {
-  background-image: url(assets/doodleBanner3-min.png);
+  /* background-image: url(assets/doodleBanner3-min.png);
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
+  background-color: var(--bg-clr);
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-.frame {
+.project-card {
   margin-top: 1rem;
   width: 100%;
   padding: 1rem;
