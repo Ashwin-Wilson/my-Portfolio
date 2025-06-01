@@ -67,4 +67,13 @@
     justify-content: space-between;
     text-align: left;
   }
+  .project-card {
+    flex-direction: column;
+  }
+  .project-card-icon {
+    font-size: 13px;
+  }
+  .project-card-icon img {
+    width: 1rem;
+  }
 }

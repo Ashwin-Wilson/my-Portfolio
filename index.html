@@ -661,127 +661,393 @@
           <span>Projects</span>
           <h2 class="fancyTitle blink">Projects</h2>
         </div>
-        <div class="row">
-          <div class="col-12 col-md-4">
-            <div class="text-center project-card">
-              <h6 class="my-3 sub-title">Project - 1</h6>
-              <div>
-                <img
-                  src="assets/project-img/netflix-min.png"
-                  style="width: 100%; border-radius: 10px"
-                />
+
+        <div class="row" id="project-list">
+          <!-- project item -->
+          <div class="col-md-4">
+            <div
+              class="project-card glow"
+              style="
+                background-image: url(assets/project-img/Disaster-management-platform.png);
+              "
+            >
+              <div class="project-card-details p-3">
+                <h5>Dynamic Disaster Management Platform</h5>
+                <hr />
+                <ul>
+                  <li>
+                    Built a real-time web platform for coordinating disaster
+                    relief efforts between families, drivers, volunteers,
+                    caretakers, and administrators, with live alerts, location
+                    tracking, and resource delivery workflows.
+                  </li>
+                  <li>Tech Stack : React, node.js, OLA maps</li>
+                </ul>
+                <div class="project-card-icons d-flex">
+                  <div class="d-flex px-2 py-1 glow project-card-icon">
+                    <a
+                      href="https://github.com/Ashwin-Wilson/Dynamic-Disaster-Response-Frontend"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img class="" src="assets/logos/github.webp" alt="" />
+                      <span>Front-end</span>
+                    </a>
+                  </div>
+                  <div class="d-flex px-2 py-1 mx-3 glow project-card-icon">
+                    <a
+                      href="https://github.com/Ashwin-Wilson/Dynamic-Disaster-Response-Backend"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img class="" src="assets/logos/github.webp" alt="" />
+                      <span>Back-end</span>
+                    </a>
+                  </div>
+                </div>
               </div>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://clone-app-ashwin-wilson.netlify.app/"
-                class="btn btn-dark my-2 slideUp"
-                >View website</a
-              >
             </div>
           </div>
-          <div class="col-12 col-md-4">
-            <div class="text-center project-card">
-              <h6 class="my-3 sub-title">Project - 2</h6>
-              <div>
-                <img
-                  src="assets/project-img/OLX-min.png"
-                  style="width: 100%; border-radius: 10px"
-                />
+          <!-- project item -->
+
+          <div class="col-md-4">
+            <div
+              class="project-card glow"
+              style="background-image: url(assets/project-img/GranthaNetra.png)"
+            >
+              <div class="project-card-details p-3">
+                <h5>Grantha Netra</h5>
+                <hr />
+                <ul>
+                  <li>
+                    A web-based platform that extracts text from scanned
+                    Malayalam PDFs using OCR and allows manual correction for
+                    corpus creation and digital archiving.
+                  </li>
+                  <li>
+                    Tech Stack : Tesseract OCR, React (frontend), Node.js &
+                    MongoDB (backend).
+                  </li>
+                </ul>
+                <div class="project-card-icons d-flex">
+                  <div class="d-flex px-2 py-1 glow project-card-icon">
+                    <a
+                      href="https://github.com/Ashwin-Wilson/GranthaNetra-Frontend"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img class="" src="assets/logos/github.webp" alt="" />
+                      <span>Front-end</span>
+                    </a>
+                  </div>
+
+                  <div class="d-flex px-2 py-1 mx-3 glow project-card-icon">
+                    <a
+                      href="https://github.com/Ashwin-Wilson/GranthaNetra-Backend"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img class="" src="assets/logos/github.webp" alt="" />
+                      <span>Back-end</span>
+                    </a>
+                  </div>
+                </div>
               </div>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://olx-clone-ashwin.netlify.app/"
-                class="btn btn-dark my-2 slideUp"
-                >View website</a
-              >
             </div>
           </div>
-          <div class="col-12 col-md-4">
-            <div class="text-center project-card">
-              <h6 class="my-3 sub-title">Project - 3</h6>
-              <div>
-                <video
-                  autoplay
-                  loop
-                  muted
-                  src="assets/project-img/ISRO.mp4"
-                  style="width: 100%; border-radius: 10px"
-                ></video>
+          <!-- project item -->
+
+          <div class="col-md-4">
+            <div
+              class="project-card glow"
+              style="background-image: url(assets/project-img/SIC-vm.png)"
+            >
+              <div class="project-card-details p-3">
+                <h5>SIC Assembler & Virtual Machine</h5>
+                <hr />
+                <ul>
+                  <li>
+                    Created a low-level assembler and simulator to process SIC
+                    assembly language, converting it to machine code and
+                    executing it with virtual memory/register models.
+                  </li>
+                  <li>Tech Stack : C programming</li>
+                </ul>
+                <div class="project-card-icons d-flex">
+                  <div class="d-flex px-2 py-1 mx-3 glow project-card-icon">
+                    <a
+                      href="https://github.com/Ashwin-Wilson/SIC-machine"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img class="" src="assets/logos/github.webp" alt="" />
+                      <span>Github</span>
+                    </a>
+                  </div>
+                </div>
               </div>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://ashwin-wilson.github.io/ISRO"
-                class="btn btn-dark my-2 slideUp"
-                >View website</a
-              >
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-md-4">
-            <div class="text-center project-card">
-              <h6 class="my-3 sub-title">Project - 4</h6>
-              <div>
-                <video
-                  autoplay
-                  loop
-                  muted
-                  src="assets/project-img/Irene.mp4"
-                  style="width: 100%; border-radius: 10px"
-                ></video>
+
+          <!-- project item -->
+          <div class="col-md-4 my-md-3">
+            <div
+              class="project-card glow"
+              style="background-image: url(assets/project-img/netflix-min.png)"
+            >
+              <div class="project-card-details p-3">
+                <h5>Netflix - clone</h5>
+                <hr />
+                <ul>
+                  <li>Clone of netflix website</li>
+                  <li>Tech Stack : React</li>
+                </ul>
+                <div class="project-card-icons d-flex">
+                  <div class="d-flex px-2 py-1 glow project-card-icon">
+                    <a
+                      href="https://clone-app-ashwin-wilson.netlify.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        class=""
+                        src="assets/logos/website.png"
+                        style="width: 1.2rem"
+                        alt=""
+                      />
+                      <span>Live view</span>
+                    </a>
+                  </div>
+                  <div class="d-flex px-2 py-1 mx-3 glow project-card-icon">
+                    <a
+                      href="https://github.com/Ashwin-Wilson/Netflix-clone"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img class="" src="assets/logos/github.webp" alt="" />
+                      <span>Github</span>
+                    </a>
+                  </div>
+                </div>
               </div>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://ashwin-wilson.github.io/Irene-Alsa-George/"
-                class="btn btn-dark my-2 slideUp"
-                >View website</a
-              >
             </div>
           </div>
-          <div class="col-12 col-md-4">
-            <div class="text-center project-card">
-              <h6 class="my-3 sub-title">Project - 5</h6>
-              <div>
-                <video
-                  autoplay
-                  loop
-                  muted
-                  src="assets/project-img/canvart_sy.mp4"
-                  style="width: 100%; border-radius: 10px"
-                ></video>
+
+          <!-- project item -->
+          <div class="col-md-4 my-md-3">
+            <div
+              class="project-card glow"
+              style="background-image: url(assets/project-img/OLX-min.png)"
+            >
+              <div class="project-card-details p-3">
+                <h5>OLX - clone</h5>
+                <hr />
+                <ul>
+                  <li>Clone of OLX website.</li>
+                  <li>Tech Stack : React, firebase</li>
+                </ul>
+                <div class="project-card-icons d-flex">
+                  <div class="d-flex px-2 py-1 glow project-card-icon">
+                    <a
+                      href="https://olx-clone-ashwin.netlify.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        class=""
+                        src="assets/logos/website.png"
+                        style="width: 1.2rem"
+                        alt=""
+                      />
+                      <span>Live view</span>
+                    </a>
+                  </div>
+                  <div class="d-flex px-2 py-1 mx-3 glow project-card-icon">
+                    <a
+                      href="https://github.com/Ashwin-Wilson/OLX-clone-react-app"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img class="" src="assets/logos/github.webp" alt="" />
+                      <span>Github</span>
+                    </a>
+                  </div>
+                </div>
               </div>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://ashwin-wilson.github.io/canvart_sy/"
-                class="btn btn-dark my-2 slideUp"
-                >View website</a
-              >
             </div>
           </div>
-          <div class="col-12 col-md-4">
-            <div class="text-center project-card">
-              <h6 class="my-3 sub-title">Project - 6</h6>
-              <div>
-                <video
-                  autoplay
-                  loop
-                  muted
-                  src="assets/project-img/AKSC23.mp4"
-                  style="width: 100%; border-radius: 10px"
-                ></video>
+
+          <!-- project item -->
+          <div class="col-md-4 my-md-3">
+            <div
+              class="project-card glow"
+              style="background-image: url(assets/project-img/ISRO.png)"
+            >
+              <div class="project-card-details p-3">
+                <h5>ISRO - website</h5>
+                <hr />
+                <ul>
+                  <li>A website for ISRO, developed for a hackathon.</li>
+                  <li>Tech Stack : HTML, CSS, JavaScript, Bootstrap</li>
+                </ul>
+                <div class="project-card-icons d-flex">
+                  <div class="d-flex px-2 py-1 glow project-card-icon">
+                    <a
+                      href="https://ashwin-wilson.github.io/ISRO/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        class=""
+                        src="assets/logos/website.png"
+                        style="width: 1.2rem"
+                        alt=""
+                      />
+                      <span>Live view</span>
+                    </a>
+                  </div>
+                  <div class="d-flex px-2 py-1 mx-3 glow project-card-icon">
+                    <a
+                      href="https://github.com/Ashwin-Wilson/ISRO"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img class="" src="assets/logos/github.webp" alt="" />
+                      <span>Github</span>
+                    </a>
+                  </div>
+                </div>
               </div>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://ashwin-wilson.github.io/AKSC-23/"
-                class="btn btn-dark my-2 slideUp"
-                >View website</a
-              >
+            </div>
+          </div>
+
+          <!-- project item -->
+          <div class="col-md-4 my-md-3">
+            <div
+              class="project-card glow"
+              style="background-image: url(assets/project-img/Irene.png)"
+            >
+              <div class="project-card-details p-3">
+                <h5>Portfolio</h5>
+                <hr />
+                <ul>
+                  <li>Portfolio of Irene Elsa George</li>
+                </ul>
+                <div class="project-card-icons d-flex">
+                  <div class="d-flex px-2 py-1 glow project-card-icon">
+                    <a
+                      href="https://ashwin-wilson.github.io/Irene-Alsa-George/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        class=""
+                        src="assets/logos/website.png"
+                        style="width: 1.2rem"
+                        alt=""
+                      />
+                      <span>Live view</span>
+                    </a>
+                  </div>
+                  <div class="d-flex px-2 py-1 mx-3 glow project-card-icon">
+                    <a
+                      href="https://github.com/Ashwin-Wilson/Irene-Alsa-George"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img class="" src="assets/logos/github.webp" alt="" />
+                      <span>Github</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- project item -->
+          <div class="col-md-4 my-md-3">
+            <div
+              class="project-card glow"
+              style="background-image: url(assets/project-img/Canvartsy.png)"
+            >
+              <div class="project-card-details p-3">
+                <h5>Canvart_sy website</h5>
+                <hr />
+                <ul>
+                  <li>Website for canvart_sy to display art works.</li>
+                  <li>Tech Stack : HTML, CSS, JavaScript, Bootstrap</li>
+                </ul>
+                <div class="project-card-icons d-flex">
+                  <div class="d-flex px-2 py-1 glow project-card-icon">
+                    <a
+                      href="https://ashwin-wilson.github.io/canvart_sy/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        class=""
+                        src="assets/logos/website.png"
+                        style="width: 1.2rem"
+                        alt=""
+                      />
+                      <span>Live view</span>
+                    </a>
+                  </div>
+                  <div class="d-flex px-2 py-1 mx-3 glow project-card-icon">
+                    <a
+                      href="https://github.com/Ashwin-Wilson/canvart_sy"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img class="" src="assets/logos/github.webp" alt="" />
+                      <span>Github</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- project item -->
+          <div class="col-md-4 my-md-3">
+            <div
+              class="project-card glow"
+              style="background-image: url(assets/project-img/AKSC.png)"
+            >
+              <div class="project-card-details p-3">
+                <h5>AKSC'23 website</h5>
+                <hr />
+                <ul>
+                  <li>AKSC'23 website developed for a hackathon.</li>
+                  <li>Tech Stack : HTML, CSS, JavaScript, Bootstrap</li>
+                </ul>
+                <div class="project-card-icons d-flex">
+                  <div class="d-flex px-2 py-1 glow project-card-icon">
+                    <a
+                      href="https://ashwin-wilson.github.io/AKSC-23/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        class=""
+                        src="assets/logos/website.png"
+                        style="width: 1.2rem"
+                        alt=""
+                      />
+                      <span>Live view</span>
+                    </a>
+                  </div>
+                  <div class="d-flex px-2 py-1 mx-3 glow project-card-icon">
+                    <a
+                      href="https://github.com/Ashwin-Wilson/AKSC-23"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img class="" src="assets/logos/github.webp" alt="" />
+                      <span>Github</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

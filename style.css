@@ -77,14 +77,11 @@ body {
   transition: all 0.3s ease;
   border-radius: 8px;
   cursor: pointer;
-  transform: translateY(-2px);
 }
 
 .glow:hover {
-  box-shadow: -6px 0px 40px 0px rgb(0 123 255 / 71%),
-    6px 0 40px 5px rgba(255, 20, 145, 0.804), 0 4px 15px rgba(0, 0, 0, 0.504);
-
-  transform: translateY(-2px);
+  box-shadow: -30px 0px 40px 0px rgb(0 123 255 / 71%),
+    6px 0 40px 10px rgb(255, 20, 145), 0 4px 35px rgba(0, 0, 0, 0.504);
 }
 
 .section-title {
@@ -397,16 +394,74 @@ body {
   /* background-image: url(assets/doodleBanner3-min.png);
   background-position: center;
   background-size: cover; */
-  background-color: var(--bg-clr);
+  background-color: var(--bg-dark);
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
 .project-card {
-  margin-top: 1rem;
   width: 100%;
-  padding: 1rem;
-  background-color: #149dddbb;
+  margin: 5px;
+  position: relative;
+  background-size: cover;
+  min-height: 15rem;
+  border-radius: 15px;
+  /* display: flex; */
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.project-card-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 15px;
+  height: fit-content;
+  background-color: #11111173;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(16.5px);
+}
+.project-card-details {
+  width: 100%;
+  border-radius: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(60%);
+  transition: transform 0.3s ease;
+  background-color: #11111173;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(16.5px);
+}
+.project-card:hover .project-card-details {
+  transform: translateY(0);
+}
+.project-card-icon {
+  width: fit-content;
+  border: solid;
+  border-width: 1px;
+  border-color: var(--white-clr);
+  border-radius: 30px;
+  background-color: var(--bg-clr);
+  color: var(--white-clr);
+  transition: transform 0.3s ease;
+}
+
+.project-card-icon:hover {
+  transform: scale(1.1);
+}
+
+.project-card-icons a {
+  text-decoration: none;
+  color: var(--white-clr);
+}
+
+.project-card-icon img {
+  width: 1.5rem;
 }
 
 .sub-title {
